@@ -71,8 +71,8 @@ export default function Meme() {
                     Get a new meme image 🖼
                 </button>
             </div>
-            <div className="meme">
-                <Image src={meme.randomImage} className="meme--image" alt="meme image"  height={400} width={400} />
+            <div className="meme" style={{width: 800, height:500, margin:"0 auto"}}>
+                <Image src={meme.randomImage} className="meme--image" alt="meme image"  layout="fill" objectFit="contain"/>
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
